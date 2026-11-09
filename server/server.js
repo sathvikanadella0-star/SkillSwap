@@ -8,12 +8,12 @@ require("dotenv").config();
 const app = express();
 
 app.use(cors({
-    origin: process.env.CLIENT_URL || "http://localhost:5174"
+    origin: "http://localhost:5176"
 }));
 
 app.use(express.json());
 
-// USER MODEL
+
 const User = mongoose.model("User", new mongoose.Schema({
     name: { type: String, required: true },
     email: { type: String, required: true, unique: true },
