@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    color: #222;
+}
+
+.navbar {
+    background: #24245c;
+    color: white;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.navbar h2 {
+    font-size: 27px;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button {
+    background: #6259db;
+    color: white;
+    border: none;
+    padding: 11px 17px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #4038a8;
+}
+
+.nav-links button {
+    background: transparent;
+    border: 1px solid #777;
+}
+
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+    background: linear-gradient(120deg, #24245c, #6557d9);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.hero button {
+    background: white;
+    color: #24245c;
+    font-weight: bold;
+}
+
+.content {
+    padding: 45px 6%;
+}
+
+.content h2 {
+    margin-bottom: 25px;
+    color: #24245c;
+}
+
+.search {
+    width: 100%;
+    max-width: 550px;
+    margin-bottom: 30px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+}
+
+.skill-card,
+.request-card {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.skill-card h3 {
+    margin: 15px 0;
+    color: #24245c;
+}
+
+.skill-card p {
+    margin: 12px 0;
+    line-height: 1.5;
+}
+
+.skill-card button,
+.request-card button {
+    margin: 6px 5px 0 0;
+}
+
+.category {
+    background: #e8e6ff;
+    color: #4038a8;
+    padding: 6px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+.delete {
+    background: #dc3545;
+}
+
+.delete:hover {
+    background: #a91e2b;
+}
+
+.form-container {
+    background: white;
+    width: 90%;
+    max-width: 480px;
+    margin: 45px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+.form-container h2,
+.form-container h3 {
+    color: #24245c;
+    margin-bottom: 18px;
+}
+
+.form-container h3 {
+    margin-top: 30px;
+}
+
+.form-container button {
+    width: 100%;
+    margin-top: 12px;
+}
+
+.request-card {
+    margin-bottom: 20px;
+}
+
+.request-card p {
+    margin: 10px 0;
+}
+
+.message {
+    background: #e3f5e8;
+    color: #176b35;
+    padding: 15px;
+    margin: 15px auto;
+    width: 90%;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.message button {
+    background: transparent;
+    color: #176b35;
+    padding: 0 8px;
+}
+
+.empty {
+    padding: 30px;
+    text-align: center;
+}
+
+footer {
+    background: #24245c;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 55px 15px;
+    }
+
+    .hero h1 {
+        font-size: 29px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .content {
+        padding: 30px 5%;
+    }
+}
